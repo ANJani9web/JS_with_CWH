@@ -1,15 +1,37 @@
-// prompt Asks from the user
-// alert shows the result to the user
+// Question 01
 
-let a = prompt("Hi, What is your age ?")
-//console.log(typeof a)  // here 'a' is of string type
+let age = prompt("What is your age ?")
+if (age > 10 && age < 20) {
+  console.log("Your age lies between 10 and 20")
+}
+else {
+  console.log("Your age does not lie between 10 and 20")
+}
 
-a = Number.parseInt(a) // Converting a string to integer
-console.log(a)
+// Question 02
+let a = prompt("What is your age ?")
+switch (a) {
+  case '4':
+    console.log("Your age is 4")
+    break
 
-alert("The value of a is ",a)
+  case '24':
+    console.log("Your age is 24")
+    break
 
-// ternary operator
+  case '55':
+    console.log("Your age is 55")
+    break
 
-console.log("condition ? Yes_Case : No_Case")
-console.log(a<18 ? "Can not drive" : "Can Drive")
+  default:
+    console.log("Your age is not special")
+}
+
+// Question 03
+let num = prompt("Enter a number")
+num = Number.parseInt(num)
+if (num % 2 == 0 && num % 3 == 0) console.log(num + " is divisible by 2 and 3.")
+else console.log(num + " is not divisible by 2 and 3.")
+
+// Question 05
+console.log(age>18?"You can drive" : "You can not drive")
